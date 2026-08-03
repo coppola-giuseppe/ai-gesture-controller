@@ -22,7 +22,7 @@ Può essere eseguito sia con un'interfaccia visiva per il debug sia in modalità
 
 ## 🛠️ Requisiti di Sistema
 
-* **Sistema Operativo:** Linux (testato su Nobara/Fedora con PipeWire)
+* **Sistema Operativo:** Linux (testato su Nobara/Fedora con PipeWire) (WIP per compatibilità Linux/Windows)
 * **Python:** 3.9 o superiore
 * **Webcam** funzionante
 
@@ -32,8 +32,7 @@ Può essere eseguito sia con un'interfaccia visiva per il debug sia in modalità
 
 1. **Clona la repository:**
   ```bash
-  git clone [https://github.com/coppola-giuseppe/ai-gesture-controller](https://github.com/coppola-giuseppe/ai-gesture-controller)
-  ai-gesture-controller
+  git clone https://github.com/coppola-giuseppe/ai-gesture-controller.git
   ```
 
 2. **Crea e attiva un ambiente virtuale (consigliato)**
@@ -47,7 +46,16 @@ Può essere eseguito sia con un'interfaccia visiva per il debug sia in modalità
   pip install -r requirements.txt
   ```
 
-4. **Scarica il modello MediaPipe:**
+4. **Scarica il modello MediaPipe (HandLandmarker):**
   ```bash
-  wget -q [https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task](https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task)
+  wget -q https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task
+
+
+## 🚀 Avvio
+
+Assicurati che l'ambiente virtuale sia attivo ed esegui lo script:
+
+  ```bash
+  source venv/bin/activate
+  python ai_gestures_recognition.py
   ```
