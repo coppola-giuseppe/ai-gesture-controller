@@ -49,7 +49,7 @@ Può essere eseguito sia con un'interfaccia visiva per il debug sia in modalità
 4. **Scarica il modello MediaPipe (HandLandmarker):**
   ```bash
   wget -q https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task
-
+  ```
 
 ## 🚀 Avvio
 
