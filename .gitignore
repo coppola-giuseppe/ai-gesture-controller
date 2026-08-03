@@ -15,3 +15,6 @@ env/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Modello
+hand_landmarker.task

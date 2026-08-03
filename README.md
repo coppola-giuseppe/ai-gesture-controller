@@ -34,3 +34,16 @@ Può essere eseguito sia con un'interfaccia visiva per il debug sia in modalità
    ```bash
    git clone [https://github.com/coppola-giuseppe/ai-gesture-controller](https://github.com/coppola-giuseppe/ai-gesture-controller)
    ai-gesture-controller
+
+2. **Crea e attiva un ambiente virtuale (consigliato)**
+  ```bash
+  python3 -m venv venv
+  ource venv/bin/activate
+
+3. **Installa le dipendenze**
+  ```bash
+  pip install -r requirements.txt
+
+4. **Scarica il modello MediaPipe:**
+  ```bash
+  wget -q [https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task](https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task)
