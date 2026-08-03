@@ -4,7 +4,7 @@ import time
 import math
 import pulsectl
 
-# VARIABILI DI STATO    
+### VARIABILI DI STATO (modificabili)
 
 # Se impostata su 'VIDEO' appare l'interfaccia grafica che mostra i landmarks in tempo reale
 # Se impostata su 'HEADLESS' gira in background senza interfaccia grafica
@@ -23,6 +23,8 @@ TOLLERANZA_RILEVATO_SEC = 1.0 # indica dopo quanti secondi che un gesto è rilev
 TOLLERANZA_RILASCIO_SEC = 0.3 # indica dopo quanti secondi che non viene rilevato un gesto il sistema registra l'effettiva mancanza di gesti
 
 CHANGE_VOLUME_ON_ALL_OUTPUTS = True # True: cambia il valore audio di tutti gli output, False: cambia il valore audio dell'output predefinito
+
+###
 
 BaseOptions = mp.tasks.BaseOptions
 HandLandmarker = mp.tasks.vision.HandLandmarker

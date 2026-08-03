@@ -51,6 +51,8 @@ Può essere eseguito sia con un'interfaccia visiva per il debug sia in modalità
   wget -q https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task
   ```
 
+---
+
 ## 🚀 Avvio
 
 Assicurati che l'ambiente virtuale sia attivo ed esegui lo script:
@@ -59,3 +61,23 @@ Assicurati che l'ambiente virtuale sia attivo ed esegui lo script:
   source venv/bin/activate
   python ai_gesture_recognition.py
   ```
+
+
+---
+
+## ⚙️ Configurazione e Variabili Globali
+
+### Costanti di Configurazione
+Puoi modificare queste variabili in cima allo script per adattare il programma al tuo setup:
+
+| Variabile | Tipo / Default | Descrizione |
+| :--- | :--- | :--- |
+| `MODALITA` | `VIDEO` | `VIDEO` mostra la finestra con i landmark tracciati; `HEADLESS` esegue lo script in background. |
+| `CAMERA_INDEX` | `0` | Indice della webcam di sistema da utilizzare (`0` è la webcam integrata/principale). |
+| `FRAME_WIDTH` / `HEIGHT` | `1280`x`720` | Risoluzione di acquisizione inviata dall'hardware della webcam. |
+| `FPS` | `30` | Frequenza di campionamento dei fotogrammi al secondo. |
+| `CHANGE_VOLUME_ON_ALL_OUTPUTS` | `True` | Se `True`, applica il cambio di volume a tutte le schede audio/sink attive su PulseAudio/PipeWire. |
+| `LOG` | `True` | Abilita o disabilita i messaggi di debug stampati a terminale. |
+| `MARGINE` | `0.05` | Margine della webcam non considerato per le rilevazioni
+| `TOLLERANZA_RILEVATO_SEC` | `1.0` | Secondi dopo i quali un gesto è considerato valido
+| `TOLLERANZA_RILASCIO_SEC` | `0.3` | Secondi dopo i quali un gesto è considerato concluso
