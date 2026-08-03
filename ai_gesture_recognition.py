@@ -8,7 +8,7 @@ import pulsectl
 
 # Se impostata su 'VIDEO' appare l'interfaccia grafica che mostra i landmarks in tempo reale
 # Se impostata su 'HEADLESS' gira in background senza interfaccia grafica
-MODALITA = 'HEADLESS'
+MODALITA = 'VIDEO'
 
 LOG = False # Se impostata su True stampa i log durante i passaggi altrimenti no. Le eccezioni vengono stampate sempre.
 

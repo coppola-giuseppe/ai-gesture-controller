@@ -57,5 +57,5 @@ Assicurati che l'ambiente virtuale sia attivo ed esegui lo script:
 
   ```bash
   source venv/bin/activate
-  python ai_gestures_recognition.py
+  python ai_gesture_recognition.py
   ```
